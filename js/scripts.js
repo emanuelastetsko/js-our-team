@@ -57,6 +57,16 @@ console.log("team", team);
 // Stampa in console di ogni membro e delle informazioni relative ad esso
 for (let index = 0; index < team.length; index++) {
     let member = team[index];
-    console.log("member " + [index], member);
+    console.log("Membro del team n." + [index], member);
      
+ }
+
+ // Stampa nel DOM l'elenco del team
+ const listTeam = document.querySelector(".li");
+
+ for (let index = 0; index < team.length; index++) {
+    const memberItem = document.createElement("li");
+    memberItem.innerHTML = team[index].name + " --- " + team[index].role + " --- " + team[index].photo;
+    listTeam.append(memberItem);
+    
  }
