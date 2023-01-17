@@ -54,3 +54,9 @@ team.push(memberOne, memberTwo, memberThree, memberFour, memberFive, memberSix);
 
 console.log("team", team);
 
+// Stampa in console di ogni membro e delle informazioni relative ad esso
+for (let index = 0; index < team.length; index++) {
+    let member = team[index];
+    console.log("member " + [index], member);
+     
+ }
